@@ -1,5 +1,5 @@
 # Jaringan Komputer C-09 (2021)
-Laporan Resmi Jaringan Komputer Modul 1 - Crimping and Wireshark
+Laporan Resmi Jaringan Komputer Modul 4 - Subnetting and Routing
 
 NRP              | Nama
 -----------------|-----------
