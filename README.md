@@ -63,6 +63,58 @@ Gambar di atas menunjukan bahwa ping dari `EnniesLobby` yang memiliki subnet 250
 
 ## Perhitungan Subnet
 
+Langkah pertama dalam menggunakan metode CIDR adalah menentukan subnet yang ada dalam topologi dan lakukan labeling netmask terhadap subnet-subnet yang sudah ditentukan. Setelah itu lakukan penggabungan subnet-subnet yang lebih kecil. Dari proses penggabungan yang telah dilakukan, akan didapatkan subnet besarnya dan netmasknya secara keseluruhan.
+
+![Subnetting](/img/CIDR_Gambar.jpeg)
+
+Selanjutnya hitung pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan, tidak lupa menggunakan *prefix IP* yang telah ditentukan.
+
+![Tree](/img/cidr_tree.jpg)
+
+Selanjutan berdasarkan perhitungan yang sudah dilakukan, maka dilakukan pembagian IP sebagai berikut
+
+![Table](/img/CIDR_Table.png)
+
 ## Konfigurasi Routing
 
+Untuk melakukan konfigurasi routing hal pertama kita perlu membuat topologi pada GNS3 terlebih dahulu.
+
+![Topologi](/img/topologi-gns3.jpeg)
+
+Selanjutnya kita mengatur ip pada masing-masing interface dengan perhitungan yang telah dilakuakan.
+
+1. Foosha
+
+![Foosha](/img/cidr-routing-foosha.jpeg)
+
+2. Guanhao
+
+![Guanho](/img/cidr-routing-guanhao.jpeg)
+
+3. Oimo
+
+![Oimo](/img/cidr-routing-oimo.jpeg)
+
+4. Seastone
+
+![Seastone](/img/cidr-routing-seastone.jpeg)
+
+5. Alabasta
+
+![Alabasta](/img/cidr-routing-alabasta.jpeg)
+
+6. Water7
+
+![Water7](/img/cidr-routing-water7.jpeg)
+
+7. Pucci
+
+![Pucci](/img/cidr-routing-pucci.jpeg)
+
 ## Testing
+
+Setelah melakukan konfigurasi pada topologi yang telah dibuat. kita bisa melakukan pengetesan apakah konfigurasi berhasil dengan melakukan ping antar node.
+
+![Test-CIDR](/img/cidr-ping-elena-ke-jipangu.jpeg)
+
+Pada contoh testing ini kita melakukan ping dari Elena ke Jipangu dengan IP Address 192.188.40.2.
