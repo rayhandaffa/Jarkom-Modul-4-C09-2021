@@ -30,8 +30,34 @@ Setelah mendapatkan hasil dari tree, selanjutnya kita melakukan pembagian IP seh
 ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm_pembagian_ip.jpg) <br> 
 
 ## Konfigurasi Routing
+Untuk melakukan konfigurasi pada routing hal pertama kita perlu membuat sebuah topologi di CPT. <br> 
 
+![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/topolog-cpt.jpeg) <br>
+
+Setelah membuat topologi di CPT, selanjutnya perlu kita mengatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM.
+
+1. Foosha <br> 
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-foosha-1.jpeg) <br>
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-foosha-2.jpeg) <br>
+2. Guanhao <br> 
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-guanhao.jpeg) <br>
+3. OIMO<br>
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-oimo.jpeg)<br>
+4. Seastone<br>
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-seastone.jpeg)<br>
+5. Alabasta<br>
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-alabasta.jpeg)<br>
+6. Water7 <br>
+    ![Img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-water7.jpeg)<br>
+7. PUCCI<br>
+    ![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-routing-pucci.jpeg)<br>
+ 
 ## Testing
+Jika sudah melakukan routing maka semua node dalam topologi yang telah dibuat bisa melakukan ping satu sama lain dan ping ke internet. Untuk contoh kami menggunakan ping `cispher` ke `EnniesLobby` dapat di bawah ini : <br> 
+
+![img](https://github.com/rayhandaffa/Jarkom-Modul-4-C09-2021/blob/main/img/vlsm-ping-cipher-ke-enieslobby.jpeg)<br> 
+
+Gambar di atas menunjukan bahwa ping dari `EnniesLobby` yang memiliki subnet 250 HOST ke `cipher` yang memiliki subnet 700 HOST dan menandakan routing yang dilakukan berhasil. 
 
 # CIDR (Classless Inter Domain Routing) - GNS3
 
